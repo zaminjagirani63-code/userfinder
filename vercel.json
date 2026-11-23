@@ -1,7 +1,4 @@
+
 {
-  "version": 2,
-  "functions": {
-    "api/check.js": {
-      "maxDuration": 10
-    }
-  }
+  "version": 2
+}
