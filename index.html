@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080914">
+<title>ZAMIN UserFinder V2</title>
+<meta name="description" content="Public username discovery with transparent verification results.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient a"></div><div class="ambient b"></div>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">Z</span><span>ZAMIN<span class="light"> USERFINDER</span><small>PUBLIC USERNAME INTELLIGENCE</small></span></a><nav><a href="#search">Scanner</a><a href="#about">About</a><a href="#support">Support</a></nav><a class="nav-join" href="https://t.me/KINGPROFESSORBACK" target="_blank" rel="noopener">Community ↗</a></header>
+<main>
+<section class="hero"><div class="eyebrow"><i></i> OSINT-STYLE PUBLIC PROFILE CHECKER</div><h1>Discover your <span class="gradient">digital footprint.</span></h1><p>Check public username availability signals across popular platforms. Clear results, no invented matches.</p><div class="hero-pills"><span>✦ Privacy-aware</span><span>✦ Live checks where supported</span><span>✦ Free to use</span></div></section>
+<section class="glass scanner" id="search"><div class="kicker">01 / USERNAME SCANNER</div><h2>Start a new scan</h2><p class="muted">Enter a username without the @ symbol.</p>
+<form id="scanForm"><div class="searchbar"><span>@</span><input id="username" maxlength="30" autocomplete="off" placeholder="e.g. zamin123" required><button id="scanBtn">SCAN NOW <b>↗</b></button></div></form>
+<div class="platform-title"><span>PLATFORMS</span><span id="count">7 SELECTED</span></div>
+<div class="platforms" id="platforms">
+<label class="platform selected"><input type="checkbox" value="github" checked><i class="picon git">⌘</i><span>GitHub</span><b>✓</b></label>
+<label class="platform selected"><input type="checkbox" value="reddit" checked><i class="picon reddit">●</i><span>Reddit</span><b>✓</b></label>
+<label class="platform selected"><input type="checkbox" value="instagram" checked><i class="picon insta">◎</i><span>Instagram</span><b>✓</b></label>
+<label class="platform selected"><input type="checkbox" value="tiktok" checked><i class="picon tik">♪</i><span>TikTok</span><b>✓</b></label>
+<label class="platform selected"><input type="checkbox" value="facebook" checked><i class="picon fb">f</i><span>Facebook</span><b>✓</b></label>
+<label class="platform selected"><input type="checkbox" value="youtube" checked><i class="picon yt">▶</i><span>YouTube</span><b>✓</b></label>
+<label class="platform selected"><input type="checkbox" value="x" checked><i class="picon x">𝕏</i><span>X / Twitter</span><b>✓</b></label>
+</div><p class="fineprint">Only public profile checks are performed. Some platforms restrict automated access; those results will show as Unknown rather than guessing.</p></section>
+<section class="results" id="results" hidden><div class="results-head"><div><div class="kicker">02 / SCAN REPORT</div><h2>Results <span id="forUser"></span></h2></div><button class="ghost" id="copyBtn">Copy report ⧉</button></div><div class="summary" id="summary"></div><div id="resultList" class="result-list"></div><p class="fineprint">A “Found” result means the platform's public endpoint returned a matching profile. “Not found” is only used when a supported endpoint clearly reports no account. “Unknown” means verification was blocked or unsupported.</p></section>
+<section class="features" id="about"><article class="glass feature"><div class="feature-icon cyan">⌕</div><h3>Transparent checks</h3><p>Live verification is used only where a reliable public endpoint is available.</p></article><article class="glass feature"><div class="feature-icon violet">⛨</div><h3>Privacy first</h3><p>No password collection, private account access, or hidden personal data.</p></article><article class="glass feature"><div class="feature-icon pink">↗</div><h3>Shareable report</h3><p>Copy the result summary and direct public profile links.</p></article></section>
+<section class="glass support" id="support"><div><div class="kicker">03 / DEVELOPER SUPPORT</div><h2>Need help?</h2><p class="muted">Questions, feedback or collaboration? Reach the developer.</p></div><div class="support-links"><a href="mailto:zaminjagirani63@gmail.com">✉ Email developer</a><a href="https://www.youtube.com/@PROXZAMIN-z9l" target="_blank" rel="noopener">▶ YouTube</a><a href="https://t.me/KINGPROFESSORBACK" target="_blank" rel="noopener">➤ Telegram</a></div><div class="credit">DEVELOPED BY <strong>ZAMIN JAGIRANI</strong></div></section>
+</main><footer>© <span id="year"></span> ZAMIN UserFinder <i>•</i> Public username discovery</footer>
+<div class="gate-backdrop" id="joinGate" role="dialog" aria-modal="true" aria-labelledby="gateTitle"><div class="gate glass"><div class="gate-logo">Z</div><div class="kicker">WELCOME TO ZAMIN USERFINDER</div><h2 id="gateTitle">Join our <span class="gradient">community.</span></h2><p class="muted">Visit both official channels, then confirm to enter the website.</p>
+<a class="join-card tg" href="https://t.me/KINGPROFESSORBACK" target="_blank" rel="noopener"><span class="join-symbol">➤</span><span><strong>Join Telegram Channel</strong><small>@KINGPROFESSORBACK</small></span><b>↗</b></a>
+<a class="join-card yt" href="https://www.youtube.com/@PROXZAMIN-z9l" target="_blank" rel="noopener"><span class="join-symbol">▶</span><span><strong>Subscribe on YouTube</strong><small>@PROXZAMIN-z9l</small></span><b>↗</b></a>
+<label class="confirm"><input type="checkbox" id="confirmJoin"><span>I have visited both channels and want to continue.</span></label><button id="continueBtn" class="continue" disabled>JOIN DONE — ENTER WEBSITE <b>→</b></button><small class="gate-note">Confirmation-based entry. This page cannot automatically verify YouTube subscriptions or Telegram membership.</small></div></div>
+<script src="script.js"></script></body></html>
